@@ -2,10 +2,6 @@ set(SOURCES
   main.cpp
 )
 
-set(LINK_LIBRARIES_PRIVATE
-    spdlog::spdlog_header_only
-)
-
 set(LINK_LIBRARIES
 )
 

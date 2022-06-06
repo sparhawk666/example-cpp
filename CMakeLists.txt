@@ -42,16 +42,6 @@ if(CPP_PLANT_WATERER_TESTS)
   endif()
 endif()
 
-include(FetchContent)
-FetchContent_Declare(spdlog
-  GIT_REPOSITORY https://github.com/gabime/spdlog
-  GIT_TAG ${SPDLOG_VERSION})
-FetchContent_GetProperties(spdlog)
-if(NOT spdlog_POPULATED)
-  FetchContent_Populate(spdlog)
-  add_subdirectory(${spdlog_SOURCE_DIR} ${spdlog_BINARY_DIR} EXCLUDE_FROM_ALL)
-endif()
-
 # Function to link library as system library, this will skip compiler warnings
 function(target_link_libraries_system target)
   set(libs ${ARGN})

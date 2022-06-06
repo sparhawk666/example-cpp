@@ -21,10 +21,6 @@ include(GoogleTest)
 add_executable(${BINARY} ${SOURCES_FINAL})
 gtest_discover_tests(${BINARY} TEST_PREFIX new:)
 
-set(LINK_LIBRARIES_PRIVATE
-        spdlog::spdlog_header_only
-)
-
 set(LINK_LIBRARIES
         ${CMAKE_PROJECT_NAME}_lib
         gtest

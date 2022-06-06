@@ -8,10 +8,6 @@ file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
 set(LINK_LIBRARIES
 )
 
-set(LINK_LIBRARIES_PRIVATE
-        spdlog::spdlog_header_only
-)
-
 if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
     set(PLUGIN_COMPILE_OPTIONS -pedantic-errors -Wall -Wextra -Wsign-conversion -Wstrict-aliasing -pedantic -Wunreachable-code -Wcast-align -Wcast-qual -Wdisabled-optimization -Wformat=2 -Winit-self -Wmissing-include-dirs -Woverloaded-virtual -Wredundant-decls -Wshadow -Wstrict-overflow=5 -Wswitch-default -Wno-unused -Wno-variadic-macros -Wno-parentheses -fdiagnostics-show-option)
 elseif (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
