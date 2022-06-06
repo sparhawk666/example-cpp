@@ -1,0 +1,7 @@
+#ifndef CMAKE_DEMO_PLANTWATERER_H
+#define CMAKE_DEMO_PLANTWATERER_H
+
+class PlantWaterer
+{};
+
+#endif //CMAKE_DEMO_PLANTWATERER_H

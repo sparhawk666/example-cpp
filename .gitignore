@@ -1,0 +1,6 @@
+*.user
+build*
+lib*
+*.pem
+*.cer
+Doxygen
