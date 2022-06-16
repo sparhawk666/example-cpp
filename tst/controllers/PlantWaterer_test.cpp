@@ -25,7 +25,7 @@ TEST_F(PlantWatererTest, TestCorrectNameIsSet)
     pw.setName("HydroMaatje");
 
     //assert
-    ASSERT_EQ(pw.getName(), "Rioolwaterzuiveringsinstallatie");
+    ASSERT_EQ(pw.getName(), "HydroMaatje");
 
     //cleanup
 }
