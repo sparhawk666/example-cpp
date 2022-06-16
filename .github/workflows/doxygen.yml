@@ -34,3 +34,9 @@ jobs:
         with:
           name: Documentation
           path: ./Doxygen/html
+      -name: Deploy Doxygen
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: Doxygen/html
+          
