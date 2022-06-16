@@ -57,7 +57,7 @@ TEST_F(PlantWatererTest, TestSprayCausesLowerPercentage)
 
     //assert
     ASSERT_EQ(oldPercentage, 100);
-    ASSERT_EQ(newPercentage, 86);
+    ASSERT_EQ(newPercentage, 85);
 
     //cleanup
 }
