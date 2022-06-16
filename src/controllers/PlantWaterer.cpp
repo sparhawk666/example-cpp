@@ -49,9 +49,12 @@ void PlantWaterer::fillWater()
 //!
 void PlantWaterer::sprayWater()
 {
-    mWaterPercentage -= 15;
-    if (mWaterPercentage < 0)
+    if (mWaterPercentage < 15)
     {
         mWaterPercentage = 0;
+    }
+    else
+    {
+        mWaterPercentage -= 15;
     }
 }
