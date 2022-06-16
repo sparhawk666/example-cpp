@@ -30,3 +30,7 @@ jobs:
         run: |
           sudo apt-get install doxygen
           doxygen Doxyfile
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Documentation
+          path: ./Doxygen/html
